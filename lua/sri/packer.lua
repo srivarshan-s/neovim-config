@@ -35,6 +35,14 @@ return require('packer').startup(function(use)
 	-- Undo tree
 	use 'mbbill/undotree'
 
+    -- Auto commenter
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
+
 	-- LSP
 	use {
 		'VonHeikemen/lsp-zero.nvim',
