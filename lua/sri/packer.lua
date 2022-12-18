@@ -26,6 +26,9 @@ return require('packer').startup(function(use)
 		as = 'rose-pine',
 	})
 
+    -- Gruvbox color scheme
+    use 'sainnhe/gruvbox-material'
+
 	-- Treesitter
 	use ( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
 

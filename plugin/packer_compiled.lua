@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/sri/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gruvbox-material"] = {
+    loaded = true,
+    path = "/home/sri/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/sainnhe/gruvbox-material"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/sri/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
