@@ -11,6 +11,9 @@ vim.opt.expandtab = true
 -- Smart indents
 vim.opt.smartindent = true
 
+-- Line wrap
+vim.opt.wrap = false
+
 -- Undo
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -29,6 +32,7 @@ vim.opt.scrolloff = 8
 
 vim.opt.updatetime = 50
 
+-- Colorcolumn to serve as boundary for lengthy lines
 vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
