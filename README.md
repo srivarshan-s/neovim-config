@@ -11,13 +11,14 @@ The config files to turn vanilla neovim into a full-blown IDE.
 7. Enjoy!
 
 ## Plugins currently installed
-1. packer.nvim
-2. telescope
-3. monokai colorscheme
-4. rose-pine colorscheme
-5. gruvbox colorscheme
-6. treesitter
-7. undotree
-8. comment.nvim
-9. nvim-autopairs
-10. lsp-zero.nvim
+- packer.nvim
+- telescope
+- monokai colorscheme
+- rose-pine colorscheme
+- gruvbox colorscheme
+- treesitter
+- undotree
+- comment.nvim
+- nvim-autopairs
+- lsp-zero.nvim
+
