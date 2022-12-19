@@ -26,8 +26,8 @@ return require('packer').startup(function(use)
 		as = 'rose-pine',
 	})
 
-    -- Gruvbox color scheme
-    use 'sainnhe/gruvbox-material'
+	-- Gruvbox color scheme
+	use 'sainnhe/gruvbox-material'
 
 	-- Treesitter
 	use ( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
@@ -35,8 +35,11 @@ return require('packer').startup(function(use)
 	-- Undo tree
 	use 'mbbill/undotree'
 
-    -- Auto commenter
-    use 'numToStr/Comment.nvim'
+	-- Auto commenter
+	use 'numToStr/Comment.nvim'
+
+	-- Auto brackets
+	use "windwp/nvim-autopairs"
 
 	-- LSP
 	use {
