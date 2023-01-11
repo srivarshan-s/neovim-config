@@ -2,9 +2,7 @@
 
 -- Install packer.nvim if not present on system
 local install_path = vim.fn.stdpath 'data' .. '/site/pack/packer/start/packer.nvim'
-local is_bootstrap = false
 if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
-    is_bootstrap = true
     vim.fn.system { 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path }
     vim.cmd [[packadd packer.nvim]]
 end
@@ -73,5 +71,8 @@ return require('packer').startup(function(use)
 
     -- Fancy statusline
     use 'nvim-lualine/lualine.nvim'
+
+    -- Git plugins
+    use 'lewis6991/gitsigns.nvim' -- Git signs display on buffer
 
 end)
