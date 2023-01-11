@@ -71,4 +71,7 @@ return require('packer').startup(function(use)
         }
     }
 
+    -- Fancy statusline
+    use 'nvim-lualine/lualine.nvim'
+
 end)

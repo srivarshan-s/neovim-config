@@ -1,4 +1,4 @@
-# neovim-config
+# **neovim-config**
 The config files to turn vanilla neovim into a full-blown IDE.
 
 ## Prerequisites
@@ -6,13 +6,14 @@ The config files to turn vanilla neovim into a full-blown IDE.
 2. Node Package Manager (npm)
 
 ## Setup
-1. Install Neovim (preferably version v0.8.1+)
-2. Install packer.nvim
-3. Clone repo
-4. Copy contents of repo to '~/.config/nvim/'
-5. Open Neovim
-6. Run ':PackerSync' to install the plugins
-7. Enjoy!
+<li>
+Install Neovim (preferably version v0.8.1+)
+Clone repo
+Copy contents of repo to '~/.config/nvim/'
+Open Neovim
+Run ':PackerSync' to install the plugins
+Enjoy!
+</li>
 
 ## Plugins currently installed
 - packer.nvim
@@ -25,4 +26,5 @@ The config files to turn vanilla neovim into a full-blown IDE.
 - comment.nvim
 - nvim-autopairs
 - lsp-zero.nvim
+- lualine.nvim
 
