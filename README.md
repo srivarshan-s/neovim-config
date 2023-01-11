@@ -25,4 +25,5 @@ The config files to turn vanilla neovim into a full-blown IDE.
 - nvim-autopairs
 - lsp-zero.nvim
 - lualine.nvim
+- gitsigns.nvim
 
