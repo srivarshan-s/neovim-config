@@ -68,4 +68,7 @@ return require('packer').startup(function(use)
     -- Git plugins
     use 'lewis6991/gitsigns.nvim' -- Git signs display on buffer
 
+    -- Zen mode
+    use 'folke/zen-mode.nvim'
+
 end)
