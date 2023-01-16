@@ -19,6 +19,7 @@ The config files to turn vanilla neovim into a full-blown IDE.
 - monokai colorscheme
 - rose-pine colorscheme
 - gruvbox colorscheme
+- dracula colorscheme
 - treesitter
 - undotree
 - comment.nvim

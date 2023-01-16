@@ -26,6 +26,9 @@ return require('packer').startup(function(use)
         as = 'rose-pine',
     })
 
+    -- Dracula color scheme
+    use 'dracula/vim'
+
     -- Gruvbox color scheme
     use 'sainnhe/gruvbox-material'
 
