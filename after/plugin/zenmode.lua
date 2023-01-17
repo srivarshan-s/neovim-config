@@ -13,5 +13,5 @@ require("zen-mode").setup {
 vim.keymap.set("n", "<leader>zm", function()
     require("zen-mode").toggle()
     vim.wo.wrap = false
-    ApplyColor('gruvbox-material')
+    -- ApplyColor('gruvbox-material')
 end)
