@@ -25,17 +25,30 @@ lsp.on_attach(function(client, bufnr)
         vim.cmd.LspStop('eslint')
         return
     end
+    -- Press "gd" in normal mode to go to definition
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+    -- Press "K" in normal mode to dispay information on the object
     vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
     vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)
+    -- Press "<space>vd" in normal mode to dispay error and warning 
+    -- diagnostics
     vim.keymap.set("n", "<leader>vd", vim.diagnostic.open_float, opts)
-    vim.keymap.set("n", "[d", vim.diagnostic.goto_next, opts)
-    vim.keymap.set("n", "]d", vim.diagnostic.goto_prev, opts)
+    -- Press "]d" in normal mode to goto next warning or error
+    vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
+    -- Press "[d" in normal mode to goto next warning or error
+    vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
+    -- Press "<space>vca" in normal mode to dispay code actions for
+    -- warning or error
     vim.keymap.set("n", "<leader>vca", vim.lsp.buf.code_action, opts)
+    -- Press "<space>vrr" in normal mode to dispay all references for
+    -- selected object
     vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references, opts)
+    -- Press "<space>vrn" in normal mode to rename all references for
+    -- selected object
     vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename, opts)
     vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
-    vim.keymap.set("n", "<leader>ft", "<cmd>LspZeroFormat<CR>") -- Apply LspZeroFormat
+    -- Apply code formatting for the current buffer
+    vim.keymap.set("n", "<leader>ft", "<cmd>LspZeroFormat<CR>") 
 end)
 
 lsp.setup()
