@@ -51,4 +51,5 @@ require('rose-pine').setup({
 })
 
 -- set colorscheme after options
-vim.cmd('colorscheme rose-pine')
+-- vim.cmd('colorscheme rose-pine')
+vim.cmd('colorscheme gruvbox-material')
